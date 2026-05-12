@@ -1,2 +1,3 @@
-Recuerda que al momento de intentar ejecutar el código debes de compilar y ejecutar esté mensaje en tu terminal integrada.
+Para descargar y ejecutar este proyecto necesitas tener macOS, instalar Homebrew, luego instalar SFML 2 con el comando  brew install sfml@2 , y finalmente tener las Xcode Command Line Tools con  xcode-select --install . Una vez que tengas todo eso, descarga el archivo  Tsunami.mm , abre la Terminal en la carpeta donde lo guardaste, pega el comando de compilación que viene en la descripción y listo, la animación funcionará. Todo el proyecto está hecho en C++ con SFML y solo funciona en Mac.
+Recuerda que al momento de intentar ejecutar el código debes de compilar y ejecutar esté mensaje en tu terminal integrada. 
 g++ -x objective-c++ Tsunami.mm -o Tsunami -I/opt/homebrew/opt/sfml@2/include -L/opt/homebrew/opt/sfml@2/lib -lsfml-graphics -lsfml-window -lsfml-system -framework Cocoa -framework OpenGL -framework IOKit -std=c++17 && ./Tsunami
